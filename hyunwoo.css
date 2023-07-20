@@ -1,6 +1,7 @@
 *,
 *:after,
 *:before {
+  position: relative;
   box-sizing: border-box;
 }
 
@@ -8,18 +9,24 @@ body {
   background: white;
 }
 
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .hyunwoo {
-  position: relative;
+  position: absolute;
   width: 500px;
   height: 380px;
-  margin: 300px auto;
   animation: zoomIn 7s infinite;
 }
 
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.5, 0.5, 0.5);
   }
 
   100% {
