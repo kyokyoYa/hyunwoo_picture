@@ -13,7 +13,7 @@ body {
   width: 500px;
   height: 380px;
   margin: 50px auto;
-  animation: hinge 2.5s infinite;
+  animation: hinge 2.5s 1.5s infinite;
 }
 
 @keyframes hinge {
