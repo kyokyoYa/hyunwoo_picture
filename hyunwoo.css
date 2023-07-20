@@ -12,31 +12,18 @@ body {
   position: relative;
   width: 500px;
   height: 380px;
-  margin: 50px auto;
-  animation: hinge 2.5s 5s infinite;
+  margin: 300px auto;
+  animation: zoomIn 5s infinite;
 }
 
-@keyframes hinge {
+@keyframes zoomIn {
   0% {
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  20%,
-  60% {
-    transform: rotate3d(0, 0, 1, 80deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  40%,
-  80% {
-    transform: rotate3d(0, 0, 1, 60deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(0, 700px, 0);
     opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  100% {
+    transform: scale3d(5.2, 5.2, 5.2);
   }
 }
 
