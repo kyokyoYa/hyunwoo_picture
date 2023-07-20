@@ -13,7 +13,7 @@ body {
   width: 500px;
   height: 380px;
   margin: 300px auto;
-  animation: zoomIn 5s infinite;
+  animation: zoomIn 7s infinite;
 }
 
 @keyframes zoomIn {
